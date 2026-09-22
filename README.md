@@ -2,8 +2,8 @@
 
 This folder contains the training/evaluation data and the fitted scalers used by the multi-task PyTorch models in the `Code/` directory. Each model takes a input position and jointly learns to predict:
 
-1. **159 bits** (multi-label binary classification, output via `Sigmoid` + `BCELoss`)
-2. **3 real-valued outputs** `z\_1, z\_2, z\_3` (regression, `MSELoss`)
+1. 159 bits (multi-label binary classification, output via `Sigmoid` + `BCELoss`)
+2. 3 real-valued outputs `z\_1, z\_2, z\_3` (regression, `MSELoss`)
 
 ## CSV data files
 
@@ -17,15 +17,14 @@ This folder contains the training/evaluation data and the fitted scalers used by
 Column layout for each file (in order):
 
 ```
-\[input X] , z\_1, z\_2, z\_3 , bit\_1 ... bit\_159 , R\_Max
+\[input X] , z\_1, z\_2, z\_3 , bit\_1 ... bit\_159 
 ```
 
-* **Input columns (X):** the scaled position/coordinates used as model input. 3-dimensional for `PCR`, `PMBS`, `PUAV`; 2-dimensional (`Kx`, `Ky`) for the Kx dataset.
-* **`z\_1, z\_2, z\_3`:** the 3 real-valued regression targets, already scaled in the CSV — the corresponding `scaler\_y\_\*` is needed to recover the original values.
-* **`bit\_1` through `bit\_159`:** 159 binary (0/1) labels used for the multi-label classification head.
-* **`R\_Max`:** an extra trailing value included in the data (not currently consumed by the training scripts in `Code/`).
+* Input columns (X): the scaled position/coordinates used as model input. 3-dimensional for `PCR`, `PMBS`, `PUAV`; 2-dimensional (`Kx`, `Ky`) for the Kx dataset.
+* `z\_1, z\_2, z\_3`:** the 3 real-valued regression targets, already scaled in the CSV — the corresponding `scaler\_y\_\*` is needed to recover the original values.
+* `bit\_1` through `bit\_159`: 159 binary (0/1) labels used for the multi-label classification head.
 
-All X and Y values in the CSV files are **already scaled**; original values can only be recovered using the matching `scaler\_\*.save` files below.
+All X and Y values in the CSV files are already scaled; original values can only be recovered using the matching `scaler\_\*.save` files below.
 
 ## Scaler files (`.save`, scikit-learn / `joblib`)
 
