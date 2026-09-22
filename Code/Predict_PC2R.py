@@ -7,10 +7,10 @@ import joblib
 # =========================
 # 0) Config
 # =========================
-CSV_PATH = "scaled_output_159bits_PCR.csv"
-MODEL_PATH = "multitask_159bits_3real_PCR.pth"
-SCALER_X_PATH = "scaler_x_input_min_PCR.save"
-SCALER_Y_PATH = "scaler_y_output_min_PCR.save"
+CSV_PATH = "scaled_output_159bits_PC2R.csv"
+MODEL_PATH = "multitask_159bits_3real_PC2R.pth"
+SCALER_X_PATH = "scaler_x_input_min_PC2R.save"
+SCALER_Y_PATH = "scaler_y_output_min_PC2R.save"
 OUTPUT_CSV = "prediction_results_PCR_28_4_01.csv"
 INPUT_COLS = ['P_C2R_1','P_C2R_2', 'P_C2R_3']
 BIT_COLS = [f"bit_{i}" for i in range(1, 160)]
