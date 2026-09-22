@@ -72,10 +72,10 @@ Y\_original = scaler\_y.inverse\_transform(df\[\["z\_1", "z\_2", "z\_3"]].values
 
 |File|Size|
 |-|-|
-|`scaled\_output\_159bits\_PCR.csv`|\~3.0 MB|
-|`scaled\_output\_159bits\_PMBS.csv`|\~3.2 MB|
-|`scaled\_output\_159bits\_PUAV.csv`|\~3.2 MB|
-|`scaled\_output\_159bits\_Kx.csv`|\~192 KB|
+|`scaled_output_159bits_PCR.csv`|\~3.0 MB|
+|`scaled_output_159bits_PMBS.csv`|\~3.2 MB|
+|`scaled_output_159bits_PUAV.csv`|\~3.2 MB|
+|`scaled_output_159bits\_Kx.csv`|\~192 KB|
 |Each `.save` file|\~1 KB|
 
 
