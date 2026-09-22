@@ -11,10 +11,10 @@ from sklearn.model_selection import train_test_split
 # =========================
 # 0) Config
 # =========================
-CSV_PATH = "scaled_output_159bits_PCR.csv"
-SCALER_X_PATH = "scaler_x_input_min_PCR.save"           # scaler X (min-max?) để inverse_transform
-SCALER_Y_PATH = "scaler_y_output_min_PCR.save"     # scaler Y (standard) để inverse_transform
-SAVE_MODEL_PATH = "multitask_159bits_3real_PCR.pth"
+CSV_PATH = "scaled_output_159bits_PC2R.csv"
+SCALER_X_PATH = "scaler_x_input_min_PC2R.save"           # scaler X (min-max?) để inverse_transform
+SCALER_Y_PATH = "scaler_y_output_min_PC2R.save"     # scaler Y (standard) để inverse_transform
+SAVE_MODEL_PATH = "multitask_159bits_3real_PC2R.pth"
 
 INPUT_COLS = ['P_C2R_1','P_C2R_2', 'P_C2R_3']
 BIT_COLS = [f"bit_{i}" for i in range(1, 160)]
