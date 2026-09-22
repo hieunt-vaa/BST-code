@@ -14,7 +14,7 @@ from sklearn.model_selection import train_test_split
 CSV_PATH = "scaled_output_159bits_PUAV.csv"
 SCALER_X_PATH = "scaler_x_input_min_PUAV.save"           # scaler X (min-max?) để inverse_transform
 SCALER_Y_PATH = "scaler_y_output_min_PUAV.save"     # scaler Y (standard) để inverse_transform
-SAVE_MODEL_PATH = "multitask_199bits_3real_PUAV.pth"
+SAVE_MODEL_PATH = "multitask_159bits_3real_PUAV.pth"
 
 INPUT_COLS = ['P_UAV_1','P_UAV_2', 'P_UAV_3']
 BIT_COLS = [f"bit_{i}" for i in range(1, 160)]
