@@ -35,7 +35,7 @@ All X and Y values in the CSV files are already scaled; original values can only
 |`scaler_x_input_min_PUAV.save`|PUAV|Inverse-transform of input X|
 |`scaler_y_output_min_PUAV.save`|PUAV|Inverse-transform of output `z_1..z_3`|
 |`scaler_x_input_min_Kx.save`|Kx/Ky|Inverse-transform of input X|
-|`scaler_y_output_min_PKx.save`|Kx/Ky|Inverse-transform of output `z_1..z_3`|
+|`scaler_y_output_min_Kx.save`|Kx/Ky|Inverse-transform of output `z_1..z_3`|
 |`scaler_x_input_min.save`|PMBS|Inverse-transform of input X|
 |`scaler_y_output_min.save`|PMBS|Inverse-transform of output `z_1..z_3`|
 
@@ -47,8 +47,8 @@ All X and Y values in the CSV files are already scaled; original values can only
 |-|-|-|-|-|-|
 |`Main_PC2R.py`|`scaled_output_159bits_PC2R.csv`|`scaler_x_input_min_PC2R.save`|`scaler_y_output_min_PC2R.save`|3|`multitask_159bits_3real_PCR.pth`|
 |`Main_PMBS.py`|`scaled_output_159bits_PMBS.csv`|`scaler_x_input_min.save`|`scaler_y_output_min.save`|3|`multitask_159bits_3real_PMBS.pth`|
-|`Main_PUAV.py`|`scaled_output_159bits_PUAV.csv`|`scaler_x_input_min_PUAV.save`|`scaler_y_output_min_PUAV.save`|3|`multitask_199bits_3real_PUAV.pth`|
-|`MainKx_Ky.py`|`scaled_output_159bits_Kx.csv`|`scaler_x_input_min_Kx.save`|`scaler_y_output_min_PKx.save`|2|*(see script)*|
+|`Main_PUAV.py`|`scaled_output_159bits_PUAV.csv`|`scaler_x_input_min_PUAV.save`|`scaler_y_output_min_PUAV.save`|3|`multitask_159bits_3real_PUAV.pth`|
+|`MainKx_Ky.py`|`scaled_output_159bits_Kx.csv`|`scaler_x_input_min_Kx.save`|`scaler_y_output_min_Kx.save`|2|*(see script)*|
 
 The corresponding `Predict_*.py` scripts load the matching CSV + scalers + saved model to run inference over the full dataset and write predictions to a `prediction_results_*.csv` file.
 
