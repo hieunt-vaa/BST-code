@@ -21,7 +21,7 @@ BIT_COLS = [f"bit_{i}" for i in range(1, 160)]
 OUTPUT_COLS = ["z_1", "z_2", "z_3"]                 # 3 nghiệm thực (đã chuẩn hoá trong CSV)
 
 BATCH_SIZE = 32
-EPOCHS = 5000
+EPOCHS = 500
 LR = 1e-5
 WEIGHT_DECAY = 1e-6
 HIDDEN = 256
